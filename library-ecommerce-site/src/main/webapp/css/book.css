@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.profile {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+}
+
+.buy, .submit {
+	border-radius: 0px 8px 0px 8px;
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	transform: translateX(0px);
+	transition: all 0.5s ease-in-out;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.buy {
+	padding: 3px 5px;
+	margin-left: 20px;
+}
+
+.submit {
+	padding: 6px 10px;
+}
+
+.buy:hover, .submit:hover {
+	transform: translateX(5px);
+}
+
+.buy:active, .submit:active {
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0);
+	transition: all 0.2s ease-in-out;
+}
+
+.book-detail-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.book-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.book-image img {
+    max-width: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.book-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.book-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.book-info p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #555;
+}
+
+.book-info strong {
+    color: #444;
+}
+
+.description {
+    display: block;
+    margin-top: 5px;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .book-detail-card {
+        flex-direction: column;
+    }
+    
+    .book-image img {
+        max-width: 100px;
+    }
+}
+
+.hidden-fields {
+      display: none;
+    }
+    
+.rating {
+	padding: 3px 5px;
+	cursor: pointer;
+}
+
+
+.star-rating {
+    font-size: 2rem;
+    color: gray; 
+    cursor: pointer;
+}
+
+.star {
+    color: gray; 
+}
+
+.star.hovered {
+    color: gold; 
+}
+
+.star.selected {
+    color: gold; 
+}
+
+/* Basic reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+/* Container for layout */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+
+textarea {
+    width: 90%; 
+    height: auto; 
+    padding: 12px; 
+    font-size: 16px; 
+    line-height: 1.5; 
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    resize: none; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea::placeholder {
+    color: #aaa; 
+    font-style: italic; 
+}
+
+textarea:focus {
+    border-color: #5d9bfb; 
+    outline: none; 
+    box-shadow: 0 0 8px rgba(93, 155, 251, 0.5); 
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}

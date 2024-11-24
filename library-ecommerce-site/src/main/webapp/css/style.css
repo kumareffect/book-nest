@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+button {
+	cursor: pointer;
+	padding: 3px 5px;
+}
+
+.logout {
+	border-radius: 0px 8px 0px 8px;
+	background-color: #6C7A89;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	transform: translateX(0px);
+	transition: all 0.5s ease-in-out;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+	padding: 3px 5px;
+	position: relative;
+	top: -5px;
+}
+
+.logout:hover {
+	background-color: #516376;
+	transform: translateX(5px);
+}
+
+.logout:active {
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0);
+	transition: all 0.2s ease-in-out;
+}
+
+
+.log {
+	color: crimson;
+}
+
+.head {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0 0 0 40px;
+}
+
+.head a {
+	text-decoration: none;
+}
+
+.head a:hover {
+	color: green;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    color: #838383;
+}
+
+header {
+    padding: 2rem;
+    background-color: #a9bacd;
+    color: #fff;
+    display: flex;
+    width: 100%;
+}
+
+.heading {
+    width: 80%;
+    margin-right: 20%;
+    margin-top: 40px;
+}
+
+.logo-main {
+    width: 20%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+#search {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    position: relative; /* Add this to ensure suggestions box positions correctly */
+    text-align: center;
+}
+
+#search input[type="text"] {
+    padding: 0.5rem;
+    width: 70%;
+    max-width: 400px;
+    margin-right: 0.5rem;
+}
+
+#search button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#search button:hover {
+    background-color: #555;
+}
+
+/* Suggestion box styles */
+.suggestions {
+    position: relative;
+    top: 0px; /* Position the box right below the input */
+    width: 70%; /* Match input width */
+    max-width: 400px;
+    right: 43px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+    text-align: left;
+}
+
+.cent {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.suggestions div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions div:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+#genres {
+    padding: 2rem;
+    background-color: #eee;
+    text-align: center;
+}
+
+.genre-list a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    background-color: #6C7A89;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.genre-list a:hover {
+    background-color: #4A5963;
+}
+
+#featured {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.book {
+    display: inline-block;
+    width: 200px;
+    margin: 1rem;
+    text-align: left;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.book img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.book h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.book p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.book .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.book .btn:hover {
+    background-color: #555;
+}
+
+#user-access {
+    padding: 2rem;
+    text-align: center;
+    background-color: #eee;
+}
+
+#user-access .btn {
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem;
+    background-color: #6C7A89;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#user-access .btn:hover {
+    background-color: #4A5963;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+pic {
+	height: 200px;
+}
+
+.truncate-text {
+    width: 170px;          
+    white-space: nowrap;    
+    overflow: hidden;       
+    text-overflow: ellipsis; 
+    cursor: pointer;        
+}
+
+.truncate-text.expanded {
+    white-space: normal; 
+    overflow: visible;   
+    text-overflow: clip; 
+}

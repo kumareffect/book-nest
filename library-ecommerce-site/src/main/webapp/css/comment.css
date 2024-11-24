@@ -1,0 +1,120 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.book-detail-card {
+    display: flex;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+a {
+	text-decoration: none;
+	color: crimson;
+}
+
+.book-image {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.book-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.book-info {
+    flex: 2;
+}
+
+.book-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.book-info p {
+    margin: 8px 0;
+    color: #555;
+}
+
+strong {
+    color: #333;
+}
+
+/* Review Section */
+.book-reviews {
+    margin-top: 30px;
+}
+
+.book-reviews h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    margin: 5px 0;
+}
+
+.star-ratings {
+    color: #FFD700; /* Gold color for stars */
+    font-size: 22px;
+}
+
+
+/* Button and Form Styles */
+button.rating {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button.rating:hover {
+    background-color: #4cae4c;
+}
+
+.hidden-fields {
+    display: none;
+    margin-top: 20px;
+}
+
+.hidden-fields.active {
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    resize: vertical;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+button[type="submit"]:hover {
+    background-color: rgb(35, 80, 35);
+}

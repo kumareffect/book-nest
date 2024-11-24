@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+
+.tbl-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.truncate-text {
+  max-width: 200px;             
+  max-height: 1.2em;            
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: max-height 0.3s ease; 
+}
+
+.truncate-text.expanded-text {
+  white-space: normal;           
+  max-height: none;              
+}
+
+
+
+img {
+	height: 200px;
+}
+
+
+.book-table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.book-table th, .book-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.book-table thead {
+    background-color: #f4f4f4;
+}
+
+.book-table th {
+    font-weight: bold;
+    color: #333;
+}
+
+.book-table td {
+    vertical-align: middle;
+}
+
+.book-image {
+    width: 50px;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+
